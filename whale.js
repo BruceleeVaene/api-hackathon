@@ -26,14 +26,14 @@ function logResult(result) {
     for (var i =0; i < coordinates.length; i++) {
             var newMarker = new google.maps.Marker({
             position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
-            icon: 'http://maps.google.com/mapfiles/kml/pal5/icon6.png',
+            icon: 'http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png',
             map: map
         });
+        //newMarker.addListener('click', function() {
+            //map.setZoom(12),
+            //map.setCenter(newMarker.getPosition());
+        //})
     };
-    newMarker.addListener('click', function() {
-        map.setZoom(22);
-        map.setCenter(newMarker.getPosition());
-    });
 }
 function logError(error) {
     console.log('Failure!', error);

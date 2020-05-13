@@ -14,6 +14,10 @@
         margin: 0;
         padding: 0;
       }
+      #eden {
+          width: 100%;
+          height: 250px;
+      }
     </style>
   </head>
   <body>
@@ -28,9 +32,9 @@
       var newGoogleAPIKey = config.newGoogleAPIKey;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 49.2827, lng: -123.1207},
+          center: {lat: 48.5514, lng: -123.0781},
           zoom: 8,
-          mapTypeId: 'satellite'
+          mapTypeId: google.maps.MapTypeId.HYBRID
         });
         var marker = new google.maps.Marker({
             position:{lat:32.7648, lng:-117.2266}, //test marker
@@ -45,7 +49,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="whale.js"></script>
-    <script src="map.js"></script>
+    <script src="lodging.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
