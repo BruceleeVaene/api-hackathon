@@ -1,3 +1,6 @@
+window.addEventListener('load', lodging);
+
+function lodging() {
 var orcaIslandHotel = new google.maps.Marker({
     position: new google.maps.LatLng(48.523160, -122.912320),
     icon: 'http://maps.google.com/mapfiles/kml/shapes/lodging.png',
@@ -54,3 +57,4 @@ var edgeInfoWindow = new google.maps.InfoWindow({
 edgewater.addListener('click', function() {
     edgeInfoWindow.open(map, edgewater)
 })
+}
